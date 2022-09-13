@@ -1,0 +1,153 @@
+
+.email-details-container {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: 'Anek-Telugu';
+    /* padding-block: 1rem; */
+}
+.email-content {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.content-header {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    padding-block-end: 1rem;
+    background-color: rgb(243, 243, 243);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.226);
+}
+
+.content-body {
+    flex-basis: 80%;
+    background-color: rgb(252, 252, 252);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.226);
+    overflow-y: auto;
+}
+.content-actions {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.3rem;
+}
+.content-actions a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    padding-inline: 0.6rem;
+    transition: all 250ms;
+
+}
+
+.back-btn {
+    position: absolute;
+    right: 1rem;
+    margin-top: 0.7rem;
+    width: 35px;
+
+}
+
+.back-btn:hover::after {
+    content: 'Back';
+}
+.content-actions {
+    margin-inline-start: 2rem;
+
+}
+
+.content-actions .remove-btn {
+    padding: 0;
+}
+
+.content-actions .star-icon {
+    cursor: pointer;
+    min-height: 30px;
+}
+
+.content-actions .trash-container {
+    padding: 0.5rem;
+}
+.content-actions .star-container {
+    padding: 0.5rem;
+}
+.content-actions .trash-container .trash-icon {
+    min-height: 30px;
+}
+
+.content-actions .remove-btn:hover .trash-icon {
+    filter: invert(12%) sepia(76%) saturate(7420%) hue-rotate(353deg) brightness(75%) contrast(108%);
+}
+
+.content-actions .remove-btn:hover {
+    background-color: rgba(219, 207, 207, 0.559);
+    color: black;
+    border-radius: 50%;
+}
+
+.subject-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.subject-container h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-weight: 550;
+    margin-inline-start: 2rem;
+    margin-block: 1rem;
+}
+
+.sub-header {
+    flex-grow: 1;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    align-items: center;
+}
+.send-details {
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: 1rem;
+}
+
+.user-icon {
+    margin-inline-start: 0.5rem;
+}
+
+.send-details span:first-child {
+    margin-inline-end: 0.5rem;
+}
+
+.content-body p {
+    font-size: 1.2rem;
+    inline-size: 650px;
+    margin-inline-start: 1rem;
+    margin-block-start: 1rem;
+}
+
+.date-details {
+    width: 100%;
+    float: right;
+}
+
+.remove-btn .trash-icon {
+    opacity: 1;
+    pointer-events: all;
+}
+.content-actions .read-container {
+    padding: 0.6rem;
+    cursor: pointer;
+}
+.content-actions .read-icon{
+    min-height: 30px;
+} 
+
+.content-actions .send-icon-container {
+    width: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms;
+}

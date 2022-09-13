@@ -1,0 +1,78 @@
+
+.sorting-option {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms;
+
+}
+
+.sorting-option button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin-block-start: 0.2rem;
+}
+
+.email-folders li:hover .sorting-option {
+    opacity: 1;
+    pointer-events: all;
+
+}
+
+.sorting-option img {
+    margin-inline-start: 50px;
+    height: 20px;
+    width: 20px;
+}
+
+.sorting-option img:hover {
+    filter: invert(77%) sepia(1%) saturate(3918%) hue-rotate(154deg) brightness(70%) contrast(84%);
+}
+
+.sorting-option label {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sorting-option label select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0 5px 0 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    /* background: #6d6bb53; */
+    height: 20px;
+    font-size: 0.75rem;
+    margin-inline-start: 0.3rem;
+    /* line-height: 36px; */
+    /* margin: 0 5px 5px 0; */
+  
+  }
+.sorting-option :after {
+  content: " ";
+  position: absolute;
+  right: 8px;
+  top: 46%;
+  margin-top: -3px;
+  z-index: 2;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6.9px 4px 0 4px;
+  border-color: #aaa transparent transparent transparent;
+  pointer-events: none;
+}
+
+  .sorting-option select:focus {
+    outline: none;
+  }
+
+  .sorting-option span {
+    font-size: 0.9rem;
+  }

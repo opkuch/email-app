@@ -1,0 +1,29 @@
+/* base */
+@import './basic/base.css';
+
+
+/* --------------------------------------------------- */
+
+ /* EMAIL IMPORTS  */
+/* email set-up */
+@import './mail-app/set-up/typography.css';
+
+/* email-basic */
+@import './mail-app/basic/base.css';
+@import './mail-app/basic/layout.css';
+@import './mail-app//basic/helpers.css';
+
+/* email-cmps */
+@import './mail-app/views/email-app.css';
+@import './mail-app/views/email-details.css';
+@import './mail-app/views/email-details.css';
+@import './mail-app/cmps/email-preview.css';
+@import './mail-app/cmps/email-list.css';
+@import './mail-app/cmps/email-folder-list.css';
+@import './mail-app/cmps/email-compose.css';
+@import './mail-app/cmps/email-filter.css';
+@import './mail-app//cmps/email-sort.css';
+@import './mail-app/cmps/app-header.css';
+
+/* email mq */
+@import './mail-app/mq/mq.css';

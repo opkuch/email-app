@@ -1,0 +1,110 @@
+.main-header {
+    font-family: 'Anek-Telugu';
+    color: rgb(46, 43, 43);
+    font-size: 2rem;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    padding-block: 0.5rem;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.215);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+.logo-img-container, .header h1 {
+    letter-spacing: 2px;
+}
+.header h1 {
+    /* color: rgb(142, 33, 33); */
+    color: #121111;
+    margin-block-start: 0.8rem;
+}
+.header h1 span {
+    color: #121111;
+}
+.logo-img-container {
+    margin-block-start: 0.5rem;
+    margin-inline-start: 2rem;
+}
+.logo-img-container img{
+    max-width: 50px;
+    filter: invert(7%) sepia(62%) saturate(5381%) hue-rotate(8deg) brightness(45%) contrast(111%);
+}
+
+.main-nav {
+    background: linear-gradient(to right, rgb(163, 0, 0), rgb(212, 43, 43));
+    box-shadow: inset 0 10px 30px rgba(31, 30, 30, 0.294);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    padding: 1rem;
+    border-radius: 20px;
+    outline: 5px solid rgba(27, 26, 26, 0.263);
+    transition: all 400ms;
+    transform: translateY(-130%);
+    font-size: 1.4rem;
+    z-index: 10;
+}
+.main-nav.menu-active {
+    transform: translateY(130%);
+}
+
+.main-nav img {
+    margin-inline: 1rem;
+}
+
+.main-nav img:hover {
+    transition: 200ms all;
+    filter: invert(100%) sepia(100%) saturate(16%) hue-rotate(281deg) brightness(103%) contrast(108%);
+}
+
+.main-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    color: whitesmoke;
+}
+
+.grid-icon {
+    position: relative;
+    max-width: 40px;
+    margin-inline-end: 2rem;
+    cursor: pointer;
+    transition: transform 1.3s, filter .5s;
+}
+
+.grid-icon:hover, .grid-icon:active {
+    transform: rotate(90deg);
+    filter: invert(11%) sepia(37%) saturate(4778%) hue-rotate(351deg) brightness(91%) contrast(119%);
+}
+
+.mail-lnk:hover::after, .book-lnk:hover::after, .note-lnk:hover::after {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.mail-lnk:hover::after {
+    content: 'Mail App';
+}
+
+.book-lnk:hover::after {
+    content: 'Book App';
+}
+
+.note-lnk:hover::after {
+    content: 'Note App';
+}
+
+.logo-router {
+    display: flex;
+    align-items: center;
+}
+
