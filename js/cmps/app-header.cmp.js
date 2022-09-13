@@ -2,7 +2,7 @@ export default {
   template: `
             <header class="main-header">
               <section class="header">
-              <router-link class="logo-router" to="/">
+              <router-link class="logo-router" to="/inbox">
                 <div class="logo-img-container">
                       <img src="assets/logo-img/horse1.png"/>
                 </div>
