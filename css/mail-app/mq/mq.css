@@ -4,6 +4,8 @@
     }
     .email-app-container {
         flex-direction: column-reverse;
+        justify-content: flex-end;
+
     }
     .sliced-body {
         display: none;
